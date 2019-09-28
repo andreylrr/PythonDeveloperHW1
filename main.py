@@ -18,8 +18,8 @@ def create_html(valutes):
     text = '<h1>Курс валют</h1>'
     text += '<table>'
     text += '<tr>'
-    for _ in valutes[0]:
-        text += f'<th><th>'
+    text += f'<th>Код валюты</th><th>Номер</th><th>Сокращенние</th><th>Масштаб</th>' \
+            f'<th>Полное название</th><th>Курс продажи</th><th>Курс покупки</th>'
     text += '</tr>'
     for valute in valutes:
         text += '<tr>'
